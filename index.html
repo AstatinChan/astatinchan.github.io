@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Astatin - Retrocomputing VTuber</title>
+<style>
+@font-face {
+    font-family: 'Terminus';
+    src: url('./terminus-ttf-4.49.3/TerminusTTF-Bold-4.49.3.ttf') format('truetype');
+}
+body {
+	background-color: #a689c1;
+	min-width:100vw;
+	min-height:100vh;
+	margin: 0;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: start;
+	color: #5c3b73;
+	font-size: 20px;
+	font-family: 'Terminus';
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+}
+main {
+	flex: auto;
+	width: 600px;
+}
+footer {
+	background-color: #5c3b73;
+	min-width:100vw;
+	min-height:150px;
+	color:  #a689c1; /*white;*/
+}
+footer div {
+	margin: 20px auto;
+	width: 600px;
+	text-align: right;
+}
+#happystatin {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+a img:hover {
+	position: relative;
+	bottom: 3px;
+}
+a {
+	color: #3B5779;
+}
+</style>
+	</head>
+	<body>
+		<header>
+			<img width=600 height=156 id="logo" src="./logo.png" src="Astatin" />
+		</header>
+		<main>
+			<h1># Heyo :3</h1>
+			<p>I'm Astatin, I'm a VTuber currently making a game on twitch</p>
+			<h2>## Social Links</h2>
+			<p>
+				<a href="https://www.twitch.tv/astatinchan"><img width=40 height=40 src="./twitch.png" alt="Twitch" /></a>
+				<a href="https://www.youtube.com/@AstatinVT"><img width=40 height=28 src="./youtube.png" alt="Youtube" /></a>
+				<a href="https://github.com/AstatinChan"><img width=40 height=39 src="./github.png" alt="Github" /></a>
+				<a href="https://vt.social/@astatin"><img width=40 height=40 src="./mastodon.png" alt="Fediverse" /></a>
+				<a href="https://discord.com/invite/eDzdYAT3sX"><img width=40 height=40 src="./discord.png" alt="Discord" /></a>
+			</p>
+			<h2>## Projects</h2>
+			<p>
+				<ul>
+					<li><strong>Gameboy assembler:</strong> Written in Go, assembler for the SM83 CPU. <a href="https://github.com/AstatinChan/gameboy-asm">source code</a></li>
+					<li><strong>Gameboy emulator:</strong> Written in Rust, emulator for DMG and GBC Gameboys. <a href="https://github.com/AstatinChan/gameboy-emulator">source code</a></li>
+					<li><strong>Bunnyland (temporary name):</strong> Written in ASM for the DMG Gameboy, developped <a href="https://www.twitch.tv/astatinchan">live on twitch</a>. <a href="https://github.com/AstatinChan/BunnyLand-Gameboy">source code</a></li>
+				</ul>
+			</p>
+		</main>
+		<footer>
+			<div>You're all cute btw :3</div>
+		</footer>
+		<img width=400 height=604 id="happystatin" src="./happy.png" />
+	</body>
+</html>
