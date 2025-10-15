@@ -8,34 +8,45 @@
     src: url('./terminus-ttf-4.49.3/TerminusTTF-Bold-4.49.3.ttf') format('truetype');
 }
 body {
-	background-color: #a689c1;
 	min-width:100vw;
 	min-height:100vh;
+	background-color: #5c3b73;
 	margin: 0;
-	display: flex;
-	flex-direction:column;
-	align-items: center;
-	justify-content: start;
 	color: #5c3b73;
 	font-size: 20px;
 	font-family: 'Terminus';
 	font-smooth: never;
 	-webkit-font-smoothing: none;
 }
+body > div#main {
+	background-color: #a689c1;
+	max-width: 760px;
+	padding: 0 20px;
+	min-height:100vh;
+	margin: auto;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: start;
+	border-left: 10px solid #4f2f66;
+	border-right: 10px solid #4f2f66;
+}
+div#main > * {
+	z-index: 0;
+}
 main {
+	max-width: 600px;
 	flex: auto;
-	width: 600px;
 }
 footer {
-	background-color: #5c3b73;
-	min-width:100vw;
-	min-height:150px;
+	background-color: #4f2f66;
+	width:640px;
 	z-index: -6;
 	color:  #a689c1; /*white;*/
+	padding: 20px 80px;
+	text-align: right;
 }
 footer div {
-	margin: 20px auto;
-	width: 600px;
 	text-align: right;
 }
 #happystatin {
@@ -56,8 +67,8 @@ nav {
   border-bottom: 2px dashed #5c3b73;
   padding: 10px;
   width: 100%;
-  max-width: 600px;
   justify-content: center;
+  max-width: 600px;
 }
 nav div {
   margin: 0 10px;
@@ -79,20 +90,22 @@ nav a {
 </style>
 	</head>
 	<body>
-		<header>
-			<img width=600 height=156 id="logo" src="./logo.png" src="Astatin" />
-		</header>
-		<nav>
-			<a href="index.html"><div>About</div></a>
-			-
-			<a href="live.html"><div>Live</div></a>
-			-
-			<a href="https://git.astatin.live"><div>Git</div></a>
-		</nav>
+		<div id="main">
+			<header>
+				<img width=600 height=156 id="logo" src="./logo.png" src="Astatin" />
+			</header>
+			<nav>
+				<a href="index.html"><div>About</div></a>
+				-
+				<a href="live.html"><div>Live</div></a>
+				-
+				<a href="https://git.astatin.live"><div>Git</div></a>
+			</nav>
 ##PAGE_CONTENT##
-		<footer>
-			<div>You're all cute btw :3</div>
-		</footer>
+			<footer>
+				You're all cute btw :3
+			</footer>
+		</div>
 		<img width=400 height=604 id="happystatin" src="./happy.png" />
 	</body>
 </html>
