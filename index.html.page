@@ -17,7 +17,7 @@
 					<li><strong>Gameboy emulator:</strong> Written in Rust, emulator for DMG and GBC Gameboys. <a href="https://git.astatin.live/gameboy-emulator.git/">source code</a></li>
 					<li><strong>Bunnyland (temporary name):</strong> Written in ASM for the DMG Gameboy, developped <a href="https://www.twitch.tv/astatinchan">live on twitch</a>. <a href="https://git.astatin.live/bunny-game.git/">source code</a></li>
 					<li><strong>HTTP Server Gameboy:</strong> An HTTP server running on the DMG Gameboy serving via serial connection. <a href="https://git.astatin.live/http-gameboy.git/">source code</a> | <a href="https://gameboy.astatin.live/">test it here</a></li>
-					<li><strong>Bunnies Vs Aliens:</strong> A tower defense game I made the art for, programmed by <a href="http://owlkaline.com/">OwlkalineVT</a>. <a href="https://git.astatin.live/owlstatin-games/bunnies-vs-aliens.git/">source code</a></li>
+					<li><strong>Bunnies Vs Aliens:</strong> A tower defense game I made the art for, programmed by <a href="http://owlkaline.com/">OwlkalineVT</a>. <a href="https://git.astatin.live/owlstatin-games/bunnies-vs-aliens.git/">source code</a> | <a href="https://owlkalinevt.itch.io/bunnies-vs-aliens">itch.io</a></li>
 				</ul>
 			</p>
 		</main>
