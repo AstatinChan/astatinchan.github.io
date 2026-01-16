@@ -1,23 +1,27 @@
-    <style>
-		#twitch-embed {
-			margin-top: 10px;
-		}
-	</style>
-	<main>
-	<!-- Add a placeholder for the Twitch embed -->
-    <div id="twitch-embed"></div>
-	</main>
+			<article>
+				<h1>Watch me Live :3</h1>
+				<div id="twitch-embed" style=""></div>
+			</article>
+    		<script src="https://embed.twitch.tv/embed/v1.js"></script>
+			<style>
+				div#twitch-embed {
+					display: flex;
+					justify-content: center;
+					height: 356px;
+				}
 
-    <!-- Load the Twitch embed JavaScript file -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 605,
-        height: 340,
-        channel: "astatinchan",
-		parent: ["localhost","astatin.live"],
-		layout: "video",
-      });
-    </script>
+				div#twitch-embed > iframe {
+					border: 4px solid #521e23;
+					width: 613px;
+					height: 348px;
+				}
+			</style>
+    		<script type="text/javascript">
+    		  new Twitch.Embed("twitch-embed", {
+    		    width: 605,
+    		    height: 340,
+    		    channel: "astatinchan",
+				parent: ["localhost","astatin.live"],
+				layout: "video",
+    		  });
+    		</script>

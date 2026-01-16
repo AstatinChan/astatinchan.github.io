@@ -2,132 +2,154 @@
 <html>
 	<head>
 		<title>Astatin - Retrocomputing VTuber</title>
-<style>
-@font-face {
-    font-family: 'Terminus';
-    src: url('./terminus-ttf-4.49.3/TerminusTTF-Bold-4.49.3.ttf') format('truetype');
-}
-body {
-	min-width:100vw;
-	min-height:100vh;
-	background-color: #5c3b73;
-	margin: 0;
-	color: #5c3b73;
-	font-size: 20px;
-	font-family: 'Terminus';
-	font-smooth: never;
-	-webkit-font-smoothing: none;
-}
-body > div#main {
-	background-color: #a689c1;
-	max-width: 760px;
-	padding: 0 20px;
-	min-height:100vh;
-	margin: auto;
-	display: flex;
-	flex-direction:column;
-	align-items: center;
-	justify-content: start;
-	border-left: 10px solid #4f2f66;
-	border-right: 10px solid #4f2f66;
-}
-div#main > * {
-	z-index: 0;
-}
-main {
-	max-width: 600px;
-	flex: auto;
-}
-footer {
-	background-color: #4f2f66;
-	width:640px;
-	z-index: -6;
-	color:  #a689c1; /*white;*/
-	padding: 20px 80px;
-	text-align: right;
-}
-footer div {
-	text-align: right;
-}
-#happystatin {
-	position: absolute;
-	right: 20px;
-	bottom: 20px;
-	z-index: -1;
-}
-a img:hover {
-	position: relative;
-	bottom: 3px;
-}
-a {
-	color: #3B5779;
-}
-nav {
-  display: flex;
-  border-bottom: 2px dashed #5c3b73;
-  padding: 10px;
-  width: 100%;
-  justify-content: center;
-  max-width: 600px;
-}
-nav div {
-  margin: 0 10px;
-  font-weight: bold;
-  font-size: 24px;
-  border-bottom: 3px dotted #5c3b73;
-  padding: 0 3px;
-  cursor: pointer;
-}
-
-nav div:hover {
-  border-bottom-style: solid;
-}
-
-nav a {
-	text-decoration: none;
-	color: #5c3b73;
-}
-</style>
+		<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+		<style>
+			@font-face {
+			    font-family: 'Astatin3x5';
+			    src: url('/assets/Astatin3x5.ttf') format('truetype');
+			}
+			body {
+				font-family: 'Astatin3x5';
+				font-size: 31px;
+				line-height: 32px;
+				color: #521e23;
+				background-image: url("/assets/marge.png"), url("/assets/bg.png");
+				background-repeat: repeat-y, repeat;
+				background-position: 128px top, left top;
+			}
+			main {
+				background-color: #f9f5d2;
+				width: 840px;
+				padding: 4px;
+				border: 8px solid #521e23;
+				margin: auto;
+				margin-top: 24px;
+			}
+			main > * {
+				border: 4px solid #b64d75;
+				border-top: 0px;
+				margin:0;
+				border-collapse: collapse;
+			}
+			header {
+				border-top: 4px solid #b64d75;
+				height: 176px;
+			}
+			nav {
+				padding-right: 33px;
+				height: 40px;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+			}
+			a:not(:has(img)) {
+				color: inherit;
+				text-decoration:underline;
+				text-decoration-thickness: 4px;
+				margin-right: 12px;
+				margin-left: 12px;
+			}
+			div#nav-bnuy {
+				position: absolute;
+				border: 0;
+			}
+			div#nav-bnuy > img {
+				position: relative;
+				left: 24px;
+				top: 168px;
+			}
+			article {
+				padding: 36px 16px;
+				padding-bottom: 120px;
+			}
+			div#dum {
+				position: absolute;
+				border: 0;
+			}
+			div#dum::after {
+				content: url('/assets/dum.png'); 
+				position: relative;
+				left: 328px;
+				bottom: 104px;
+			}
+			article > *:first-child {
+				margin-top: 0;
+			}
+			article > *:last-child {
+				margin-bottom: 0;
+			}
+			h1 {
+				font-size: inherit;
+				font-weight: normal;
+				text-decoration:underline;
+				text-decoration-thickness: 4px;
+				margin: 20px 0;
+			}
+			h2 {
+				font-size: inherit;
+				font-weight: normal;
+				text-decoration:underline;
+				text-decoration-thickness: 4px;
+				margin: 12px 0;
+			}
+			h1::before {
+  				content: url("/assets/arrow.png");
+				margin-right: 12px;
+			}
+			p {
+				margin: 16px 16px;
+			}
+			p > img {
+				vertical-align: text-bottom;
+			}
+			p > a:has(img) {
+				display: inline-block;
+				position: relative;
+				top: 4px;
+			}
+			ul li {
+				list-style-type: none;
+				margin: 32px 0px;
+			}
+			ul li h2 {
+				display: inline;
+			}
+			ul li p {
+				margin-left: 16px;
+			}
+			.project-img {
+				float: left;
+				margin-right: 16px;
+				margin-bottom: 16px;
+			}
+		</style>
 	</head>
 	<body>
-		<div id="main">
+		<main>
+			<div id="nav-bnuy">
+				<img src="/assets/brown-bunny.png" alt=""/>
+			</div>
 			<header>
-				<img width=600 height=156 id="logo" src="./logo.png" src="Astatin" />
+				<img src="/assets/logo.png" alt="Astatin Logo" />
 			</header>
 			<nav>
-				<a href="index.html"><div>About</div></a>
-				-
-				<a href="live.html"><div>Live</div></a>
-				-
-				<a href="https://git.astatin.live"><div>Git</div></a>
+				<a href="/live.html">Live</a> - <!-- <a>Art</a> - --><a href="/projects.html">Projects</a> - <a href="https://git.astatin.live">Git</a> - <a href="/">Links</a>
 			</nav>
-		<main>
-			<h1># Heyo :3</h1>
-			<p>I'm Astatin, I'm a VTuber currently making a game on twitch</p>
-			<h2>## Social Links</h2>
-			<p>
-				<a href="https://www.twitch.tv/astatinchan"><img width=40 height=40 src="./twitch.png" alt="Twitch" /></a>
-				<a href="https://www.youtube.com/@AstatinVT"><img width=40 height=28 src="./youtube.png" alt="Youtube" /></a>
-				<a href="https://github.com/AstatinChan"><img width=40 height=39 src="./github.png" alt="Github" /></a>
-				<a href="https://vt.social/@astatin"><img width=40 height=40 src="./mastodon.png" alt="Fediverse" /></a>
-				<a href="https://discord.com/invite/eDzdYAT3sX"><img width=40 height=40 src="./discord.png" alt="Discord" /></a>
-				<a href="https://bsky.app/profile/astatin.live"><img width=40 height=35 src="./bluesky.png" alt="Bluesky" /></a>
-			</p>
-			<h2>## Projects</h2>
-			<p>
-				<ul>
-					<li><strong>Gameboy assembler:</strong> Written in Go, assembler for the SM83 CPU. <a href="https://git.astatin.live/gameboy-asm.git/">source code</a></li>
-					<li><strong>Gameboy emulator:</strong> Written in Rust, emulator for DMG and GBC Gameboys. <a href="https://git.astatin.live/gameboy-emulator.git/">source code</a></li>
-					<li><strong>Bunnyland (temporary name):</strong> Written in ASM for the DMG Gameboy, developped <a href="https://www.twitch.tv/astatinchan">live on twitch</a>. <a href="https://git.astatin.live/bunny-game.git/">source code</a></li>
-					<li><strong>HTTP Server Gameboy:</strong> An HTTP server running on the DMG Gameboy serving via serial connection. <a href="https://git.astatin.live/http-gameboy.git/">source code</a> | <a href="https://gameboy.astatin.live/">test it here</a></li>
-					<li><strong>Bunnies Vs Aliens:</strong> A tower defense game I made the art for, programmed by <a href="http://owlkaline.com/">OwlkalineVT</a>. <a href="https://git.astatin.live/owlstatin-games/bunnies-vs-aliens.git/">source code</a> | <a href="https://owlkalinevt.itch.io/bunnies-vs-aliens">itch.io</a></li>
-				</ul>
-			</p>
+			<article>
+				<h1>Heyo :3</h1>
+				<p>I'm Astatin, I'm a Vtuber, I make games and I like bunnies~</p>
+				<p><img src="/assets/pyon.png" alt="₍⑅ᐢ..ᐢ₎" /> <img src="/assets/arrow2.png" alt="<-" /> This is my bunny, her name is Pyon</p>
+				<h1>Social Links</h1>
+				<p>
+					<a href="https://www.twitch.tv/astatinchan"><img src="/assets/socials/twitch.png" alt="twitch" /></a>
+					<a href="https://bsky.app/profile/astatin.live"><img src="/assets/socials/bluesky.png" alt="bluesky" /></a>
+					<a href="https://github.com/AstatinChan"><img src="/assets/socials/github.png" alt="github" /></a>
+					<a href="https://vt.social/@astatin"><img src="/assets/socials/mastodon.png" alt="mastodon" /></a>
+					<a href="https://www.youtube.com/@AstatinVT"><img src="/assets/socials/youtube.png" alt="youtube" /></a>
+					<a href="https://discord.com/invite/eDzdYAT3sX"><img src="/assets/socials/discord.png" alt="discord" /></a>
+				</p>
+			</article>
+			<div id="dum"></div>
 		</main>
-			<footer>
-				You're all cute btw :3
-			</footer>
-		</div>
-		<img width=400 height=604 id="happystatin" src="./happy.png" />
 	</body>
 </html>
